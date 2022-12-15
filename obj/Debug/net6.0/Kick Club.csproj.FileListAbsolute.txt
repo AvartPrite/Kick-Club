@@ -1,0 +1,15 @@
+/home/avart/Code/Kick Club/bin/Debug/net6.0/Kick Club
+/home/avart/Code/Kick Club/bin/Debug/net6.0/Kick Club.deps.json
+/home/avart/Code/Kick Club/bin/Debug/net6.0/Kick Club.runtimeconfig.json
+/home/avart/Code/Kick Club/bin/Debug/net6.0/Kick Club.dll
+/home/avart/Code/Kick Club/bin/Debug/net6.0/ref/Kick Club.dll
+/home/avart/Code/Kick Club/bin/Debug/net6.0/Kick Club.pdb
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.csproj.AssemblyReference.cache
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.GeneratedMSBuildEditorConfig.editorconfig
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.AssemblyInfoInputs.cache
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.AssemblyInfo.cs
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.csproj.CoreCompileInputs.cache
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.dll
+/home/avart/Code/Kick Club/obj/Debug/net6.0/ref/Kick Club.dll
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.pdb
+/home/avart/Code/Kick Club/obj/Debug/net6.0/Kick Club.genruntimeconfig.cache
