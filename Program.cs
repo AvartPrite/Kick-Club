@@ -2,10 +2,8 @@
 
 class Battle{
 
-    static int Randomizer(int x, int y){
-        Random rnd = new();
-        return rnd.Next(x, y);
-    }
+    static int Randomizer(int x = 0, int y = 21) =>
+        new Random().Next(x, y);
     static void Statistic(int heroHp, int enemyHp){
         Console.WriteLine($"Здоровье Героя: {heroHp}\nЗдоровье Врага: {enemyHp}\n");
     }
@@ -13,7 +11,8 @@ class Battle{
     static void Main(){
 
         int round = 1;
-        
+        int diceRoll;
+
         Fighter Hero = new Fighter(Randomizer(100, 121),Randomizer(10, 16));
         Fighter Enemy = new Fighter(Randomizer(100, 121),Randomizer(10, 16));
 
@@ -24,12 +23,14 @@ class Battle{
         while (true){
             Console.WriteLine($"Раунд: {round++}\n");
 
-            if (Randomizer(0, 21) > 17){
+            diceRoll = Randomizer();
+
+            if (diceRoll > 17){
                 Enemy.HP -= Hero.Str * 2;
                 Console.WriteLine($"Крит!\nГерой наносит: {Hero.Str * 2} урона\n");
                 Statistic(Hero.HP, Enemy.HP);
             }
-            else if (Randomizer(0, 21) < 6){
+            else if (diceRoll < 6){
                 Console.WriteLine("Герой промахнулся!\n");
             }
             else{
@@ -42,14 +43,16 @@ class Battle{
                 break;
             }
 
+            diceRoll = Randomizer();
+
             Thread.Sleep(1500);
             
-            if (Randomizer(0, 21) > 17){
+            if (diceRoll > 17){
                 Hero.HP -= Enemy.Str * 2;
                 Console.WriteLine($"Крит!\nВраг наносит: {Enemy.Str * 2} урона\n");
                 Statistic(Hero.HP, Enemy.HP);
             }
-            else if (Randomizer(0, 21) < 6){
+            else if (diceRoll < 6){
                 Console.WriteLine("Враг промахнулся!\n");
             }
             else{
