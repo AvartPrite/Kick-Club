@@ -10,7 +10,6 @@ class Battle{
         return dice.Next(0, 21);
     }
 
-    
     static void Statistic(int heroHp, int enemyHp){
         Console.WriteLine($"Здоровье Героя: {heroHp}\nЗдоровье Врага: {enemyHp}\n");
     }
@@ -21,6 +20,7 @@ class Battle{
         Fighter Enemy = new Fighter(Randomizer(100, 121),Randomizer(10, 16));
 
         Statistic(Hero.HP, Enemy.HP);
+        
         Console.WriteLine("Fight!\n");
         
         while (true){
